@@ -5,24 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>My Website
-    </title>
+    <title>My Website</title>
 </head>
 <body>
     <h1>Hello World</h1>
-    <div class="opening">
+    <ul>
+        <li><a href="test.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><button onclick="darkmode()">Dark Mode</button></li>
+    </ul>
+    <div class="opening col-12 col-s-12">
         <img src="Watt.jpg">
         <h2>INTRODUCE MYSELF</h2><br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     </div>
-    <div class="part1"><img src="tugas wajah.jpg" class="test">
-        <h2>TITLE</h2><br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ...</div>
-    <div class="part2"><img src="tugas wajah.jpg" class="test">
-        <h2>TITLE</h2><br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ...</div>
-    <div class="part1"><img src="tugas wajah.jpg" class="test">
-        <h2>TITLE</h2><br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ...</div>
+    <a href="new1.html">
+        <div class="part1 col-6 col-s-12"><img src="tugas wajah.jpg" class="test">
+            <h2>TITLE</h2><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ...
+        </div>
+    </a>
+    <a href="new2.html">
+        <div class="part2 col-6 col-s-12"><img src="tugas wajah.jpg" class="test">
+            <h2>TITLE</h2><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ...
+        </div>
+    </a>
+    <a href="new3.html">
+        <div class="part1 col-6 col-s-12"><img src="tugas wajah.jpg" class="test">
+            <h2>TITLE</h2><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ...
+        </div>
+    </a>
+    <a href="new4.html">
+        <div class="part2 col-6 col-s-12"><img src="tugas wajah.jpg" class="test">
+            <h2>TITLE</h2><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ...
+        </div>
+    </a>
+    <script>
+        function darkmode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+            var head = document.h1;
+            head.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
